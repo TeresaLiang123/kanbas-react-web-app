@@ -1,0 +1,119 @@
+<select>
+    <option>SpeedGrader</option>
+</select>
+<hr/>
+<h2>Assignment Name</h2>
+
+<form action="/Kanbas/Assignments/index.html">
+
+    <input value="A1 - ENV + HTML"/>
+    <br/>
+
+    <textarea cols="50" rows="10">Description of assignment</textarea>
+    <br/>
+    <br/>
+    <!-- label for allows you to point at something with an id with points  -->
+    <label for="points">Points</label>
+    <br/>
+    <input id="points" max="100" min="50" step="5" type="number" value="100"/>
+    <br/>
+    Assignment Group
+    <br/>
+    <select>
+        <option>
+            ASSIGNMENTS
+        </option>
+    </select>
+
+    <br/>
+
+    Display Grade as
+    <br/>
+    <select>
+        <option>
+            Percentage
+        </option>
+    </select>
+
+    <br/>
+
+    Submission Type
+    <br/>
+    <select>
+        <option>
+            Online
+        </option>
+    </select>
+
+    <br/>
+
+    Online Entry Options
+
+    <br/>
+
+    <input id="text-entry" type="checkbox"/>
+    <label for="text-entry">Text Entry</label>
+    <br/>
+    <label><input type="checkbox"/>Website URL</label>
+    <br/>
+    <label><input type="checkbox" checked/>Media Recording</label>
+    <br/>
+    <label><input type="checkbox"/>Student Annotation</label>
+    <br/>
+    <label><input type="checkbox"/>File Uploads</label>
+    <br/>
+    <br/>
+
+    Submissions Attempts
+    <br/>
+    <select>
+        <option>Unlimited</option>
+    </select>
+
+    <br/>
+    <br/>
+
+    Plagiarism Review
+    <select>
+        <option>None</option>
+    </select>
+
+    <br/>
+    <br/>
+
+    Group Assignment
+    <br/>
+    <label><input type="checkbox"/>This is a group assignment</label>
+    <br/>
+    <br/>
+
+    Peer Reviews
+    <br/>
+    <label><input type="checkbox"/>Require Peer Reviews</label>
+    <br/>
+    <br/>
+
+    Assign to
+    <br/>
+    <label><input value="Everyone"/></label>
+    <br/>
+    <br/>
+
+    <h3>Due Dates</h3>
+    <input type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28"/>
+    <br/>
+    <br/>
+
+    <h3>Available From</h3>
+    <input type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28"/>
+    <br/>
+    <br/>
+
+    <h3>Until</h3>
+    <input type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28"/>
+    <br/>
+    <br/>
+
+    <button>Cancel</button>
+    <button>Save</button>
+</form>
