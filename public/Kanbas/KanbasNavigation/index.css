@@ -1,0 +1,18 @@
+.wd-side-bar {
+    background-color: black;
+    width: 83px;
+    padding:10px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.list-group-item a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
