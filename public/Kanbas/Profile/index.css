@@ -38,11 +38,6 @@ li {
     background-color: white;
 }
 
-h4 {
-    padding-top:10px;
-    padding-left:20px;
-}
-
 a {
     color: red;
     text-decoration: none;
@@ -53,13 +48,15 @@ p {
     margin-bottom:35px;
 }
 
+h4 {
+    padding-top:10px;
+    padding-left:20px;
+}
+
 .profile .fa-user {
     font-size: 100px;
     margin-bottom: 10px;
 }
-
-
-
 
 .second-list-group-item.active {
     color: black;

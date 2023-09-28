@@ -1,116 +1,182 @@
-<table border="1", width="100%">
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="#">Northeastern</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Account/index.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Home/home.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="#">Notifications</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Profile/index.html">Profile</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">ePortfolios</a>
-                    </li>
-                    <li>
-                        <a href="#">Shared Content</a>
-                    </li>
-                    <li>
-                        <a href="#">The Hub</a>
-                    </li>
-                    <li>
-                        <a href="#">Qwickly Course Tools</a>
-                    </li>
-                    <li>
-                        <a href="#">Global Announcements</a>
-                    </li>
-                </ul>
-            </td>
+<html>
+    <head>
+        <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.css"/>
+        <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/vendors/fontawesome/css/all.css"/>
+        <link rel="stylesheet" href="edit.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
 
-            <td valign="top">
-                <h2>Bob Bo</h2><br/>
-                Name:<input value="Bob Bo"/>Pronouns:
-                <select>
-                    <option>None</option>
-                </select>
-                <br/>
-                Title:<input/>
-                <br/>
-                <h2>Contact</h2>
-                <p>No registered services, you can add some on the <a>settings</a> page</p>
-                <h2>Biography</h2>
-                <textarea>Faculty, Software Enginerer, AI, Space, and renewables enthusiast</textarea>
-                <h2>Links</h2>
-                <ul>
-                    <li><a>YouTube Links to external site</a></li>
-                </ul>
-                <table>
-                    <thead>
-                        <th>Title</th>
-                        <th>URL</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input value="YouTube"/>
-                                &#8594;
-                            </td>
-                            <td>
-                                <input value="https://www.youtube.com/"/>
-                                <a href="#">Remove</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button>Add another link</button><br/>
-                                <button>Cancel</button>
-                                <button>Save Profile</button><br/>
-                                <button>Edit Profile</button>
-                                <button>Cancel Editing</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                    
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td class="wd-side-bar" valign="top">
+                        <ul>
+                            <li class="list-group-item">
+                                <a href="#"><i class="fa-solid fa-n" style="color: #ee3a3a;"></i><br/>Northeastern</a>
+                            </li>
+                            <li class="list-group-item active">
+                                <a style="color:red;" href="/Kanbas/Account/index.html"><i class="fa fa-user" aria-hidden="true" style="color: grey;"></i><br/>Account</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="/Kanbas/Dashboard/index.html"><i class="fa-solid fa-gauge" style="color: #ee3a3a;"></i><br/>Dashboard</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="/Kanbas/Courses/CourseNavigation"><i class="fa-solid fa-book" style="color: #ee3a3a;"></i><br/>Courses</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"><i class="fa-solid fa-calendar-days" style="color: #ee3a3a;"></i><br/>Calendar</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"><i class="fa-solid fa-inbox" style="color: #ee3a3a;"></i><br/>Inbox</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"><i class="fa-regular fa-clock" style="color: #ee3a3a;"></i><br/>History</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"><i class="fa-solid fa-video" style="color: #ee3a3a;"></i><br/>Studio</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"><i class="fa-solid fa-arrow-right-from-bracket" style="color: #ee3a3a;"></i><br/>Commons</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"><i class="fa-regular fa-circle-question" style="color: #ee3a3a;"></i><br/>Help</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <h4>Bob Bo</h4>
+                                <hr/>
+                            </tr>
+                            <tr>
+                                <td class="wd-account-side-bar" valign="top">
+                                    <ul>
+                                        <li class="second-list-group-item">
+                                            <a href="#">Notifications</a>
+                                        </li>
+                                        <li class="second-list-group-item active">
+                                            <a style="color: black;" href="/Kanbas/Profile/index.html">Profile</a>
+                                        </li>
+                                        <li class="second-list-group-item">
+                                            <a href="#">Settings</a>
+                                        </li>
+                                        <li class="second-list-group-item">
+                                            <a href="#">Files</a>
+                                        </li>
+                                        <li class="second-list-group-item">
+                                            <a href="#">ePortfolios</a>
+                                        </li>
+                                        <li class="second-list-group-item">
+                                            <a href="#">Shared Content</a>
+                                        </li>
+                                        <li class="second-list-group-item">
+                                            <a href="#">The Hub</a>
+                                        </li>
+                                        <li class="second-list-group-item">
+                                            <a href="#">Qwickly Course Tools</a>
+                                        </li>
+                                        <li class="second-list-group-item">
+                                            <a href="#">Global Announcements</a>
+                                        </li>
+                                    </ul>
+                                </td>
+            
+                    <td valign="top">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="profile">
+                                        <i class="fa fa-user" aria-hidden="true"></i><br/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label for="name-input" class="name-input">Name: </label>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <input class="form-control form-control-sm" type="text" value="Bob Bo" aria-label="name"/>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <label>Pronouns: </label>
+                                            <select>
+                                                <option>None</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label for="title-input" class="title-input">Title: </label>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <input class="form-control form-control-sm" type="text" aria-label="title"/>
+                                        </div>
+                                    </div>
+            
+                                    <br/>
+                                    <h2>Contact</h2>
+                                    <p>No registered services, you can add some on the <a>settings</a> page</p>
+
+                                    <div class="mb-3">
+                                        <label for="textarea" class="form-label"><h2>Biography</h2></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Faculty, Software Enginerer, AI, Space, and renewables enthusiast</textarea>
+                                    </div>
+                                    
+                                    <h2>Links</h2>
+
+
+
+                                    <div class="container">
+                                        <div class="row">
+                                          <div class="col">
+                                            <h5>Title</h5>
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                        <input class="form-control form-control-sm" type="text" value="YouTube" aria-label="name"/>
+                                                        <button class="btn btn-light">Add another link</button><br/>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        &#8594;
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                          </div>
+                                          <div class="col">
+                                            <h5>URL</h5>
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                        <input class="form-control form-control-sm" type="text" value="https://www.youtube.com/" aria-label="name"/>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <a href="#">Remove</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr/>
+                                <a href="../Account/index.html"><button class="btn btn-light">Cancel</button></a>
+                                <a href="../Account/index.html"><button class="btn btn-danger">Save Profile</button><br/></a>
+                                </td>
+                                <div class="float-end">
+                                    <a href="../Account/index.html">
+                                        <button class="btn btn-light"><i class="fa fa-pencil" aria-hidden="true"></i>Cancel Editing</button>
+                                    </a>
+                                </div><br>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+
+

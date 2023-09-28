@@ -19,6 +19,42 @@ li {
     list-style-type: none;
 }
 
+.list-group-item.active {
+    background-color: white;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    text-align: left;
+}
+
+h4 {
+    padding-top:10px;
+    padding-left:20px;
+}
+
+button {
+    margin-top:7px;
+    margin-right:7px;
+}
+
+.name-input {
+    margin-right:40px;
+}
+
+.profile .fa-user {
+    font-size: 100px;
+    margin-bottom:8px;
+}
+
+.second-list-group-item.active {
+    color: black;
+    background-color: white;
+    border-left: 2px solid black;
+    margin-left: 9px;
+}
+
 .fa-user {
     font-size: 20px;
     margin-top: 10px;
@@ -34,14 +70,8 @@ li {
     margin-top: 10px;
 }
 
-.list-group-item.active {
-    background-color: white;
-}
-
-a {
-    color: red;
-    text-decoration: none;
-    text-align: left;
+p {
+    margin-bottom:15px;
 }
 
 .second-list-group-item.active {
@@ -49,4 +79,10 @@ a {
     background-color: white;
     border-left: 2px solid black;
     margin-left: 9px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
 }

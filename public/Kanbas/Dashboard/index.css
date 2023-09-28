@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+.list-group-item.active {
+    background-color: white;
+}
+
 li {
     padding:9px;
     list-style-type: none;
