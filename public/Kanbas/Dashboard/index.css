@@ -13,6 +13,10 @@
     background-color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 li {
     padding:9px;
     list-style-type: none;
@@ -27,7 +31,7 @@ li {
     padding-left:20px;
 }
 
-.published {
+.padding {
     padding-left:30px;
 }
 
@@ -41,3 +45,14 @@ li {
     margin-top: 10px;
 }
 
+.card-padding {
+    padding-left: 0px;
+    padding-right: 35px;
+    margin-bottom: 30px;
+}
+
+.modules-info {
+    width: 100%;
+    padding-left:35px;
+    padding-right:35px;
+}
