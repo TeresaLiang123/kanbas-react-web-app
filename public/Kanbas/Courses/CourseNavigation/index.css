@@ -9,14 +9,40 @@
     text-align: center;
 }
 
-.wd-account-side-bar {
-    width: 200px;
-    margin-left: 20px;
+.list-group-item.active {
+    background-color: white;
+}
+
+.second-list-group-item a {
+    color: red;
+    text-decoration: none;
+}
+
+.second-list-group-item.active {
+    color: black;
+    background-color: white;
+    border-left: 2px solid black;
+}
+
+.md-dropdown {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: #ee3a3a;
+}
+
+.dropdown-item .fa-solid {
+    padding-right: 20px;
 }
 
 li {
     padding:9px;
     list-style-type: none;
+}
+
+li .list-group-item{
+    border-left:2px solid #00a80b;
 }
 
 .fa-user {
@@ -29,24 +55,30 @@ li {
     margin-top: 10px;
 }
 
+.list-group-item .fa-solid {
+    color: #00a80b;
+    text-align: end;
+}
+
+.with-check {
+    border-left: 4px solid #00a80b;
+    padding-left:50px;
+}
+
+.section-title {
+    border-left: 4px solid #00a80b;
+}
+
 .fa-regular {
     font-size: 20px;
     margin-top: 10px;
 }
 
-.list-group-item.active {
-    background-color: white;
+.page-title {
+    padding-left:20px;
 }
 
 a {
-    color: red;
     text-decoration: none;
-    text-align: left;
-}
-
-.second-list-group-item.active {
-    color: black;
-    background-color: white;
-    border-left: 2px solid black;
-    margin-left: 9px;
+    color: red;
 }

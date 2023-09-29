@@ -1,0 +1,25 @@
+.list-group-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.wd-side-bar {
+    background-color: black;
+    width: 83px;
+    text-align: center;
+}
+
+.list-group-item.active {
+    background-color: white;
+}
+
+.second-list-group-item a {
+    color: red;
+    text-decoration: none;
+}
+
+.second-list-group-item.active {
+    color: black;
+    background-color: white;
+    border-left: 2px solid black;
+}

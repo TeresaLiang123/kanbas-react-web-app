@@ -24,6 +24,18 @@
     border-left: 2px solid black;
 }
 
+.md-dropdown {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: #ee3a3a;
+}
+
+.dropdown-item .fa-solid {
+    padding-right: 20px;
+}
+
 li {
     padding:9px;
     list-style-type: none;
