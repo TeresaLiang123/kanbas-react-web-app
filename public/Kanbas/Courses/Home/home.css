@@ -4,8 +4,6 @@
 }
 
 .wd-side-bar {
-    background-color: black;
-    width: 83px;
     text-align: center;
 }
 
@@ -23,6 +21,7 @@
     background-color: white;
     border-left: 2px solid black;
 }
+
 
 .md-dropdown {
     background-color: black;
