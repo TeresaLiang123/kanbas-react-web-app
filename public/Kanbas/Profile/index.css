@@ -9,9 +9,31 @@
     text-align: center;
 }
 
-.wd-account-side-bar {
-    width: 200px;
-    margin-left: 20px;
+.list-group-item.active {
+    background-color: white;
+}
+
+.second-list-group-item a {
+    color: red;
+    text-decoration: none;
+}
+
+.second-list-group-item.active {
+    color: black;
+    background-color: white;
+    border-left: 2px solid black;
+}
+
+.md-dropdown {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: #ee3a3a;
+}
+
+.dropdown-item .fa-solid {
+    padding-right: 20px;
 }
 
 li {
@@ -34,33 +56,15 @@ li {
     margin-top: 10px;
 }
 
-.list-group-item.active {
-    background-color: white;
-}
-
-a {
-    color: red;
-    text-decoration: none;
-    text-align: left;
-}
-
-p {
-    margin-bottom:35px;
-}
-
-h4 {
-    padding-top:10px;
+.page-title {
     padding-left:20px;
 }
 
+a {
+    text-decoration: none;
+    color: red;
+}
 .profile .fa-user {
     font-size: 100px;
     margin-bottom: 10px;
-}
-
-.second-list-group-item.active {
-    color: black;
-    background-color: white;
-    border-left: 2px solid black;
-    margin-left: 9px;
 }

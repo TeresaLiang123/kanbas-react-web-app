@@ -3,15 +3,16 @@
         <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.css"/>
         <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css"/>
         <link rel="stylesheet" href="/vendors/fontawesome/css/all.css"/>
-        <link rel="stylesheet" href="edit.css"/>
+        <link rel="stylesheet" href="index.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body>
 
-        <table width="100%">
+    <body>
+        <table width="100%" height="100%">
             <tbody>
                 <tr>
-                    <td class="wd-side-bar" valign="top">
+                    <td class="wd-side-bar d-none d-xxl-table-cell d-xl-table-cell d-lg-table-cell d-md-none" valign="top">
                         <ul>
                             <li class="list-group-item">
                                 <a href="#"><i class="fa-solid fa-n" style="color: #ee3a3a;"></i><br/>Northeastern</a>
@@ -45,130 +46,181 @@
                             </li>
                         </ul>
                     </td>
-                    <td>
-                        <table width="100%">
-                            <tr>
-                                <h4>Bob Bo</h4>
-                                <hr/>
-                            </tr>
-                            <tr>
-                                <td class="wd-account-side-bar" valign="top">
-                                    <ul>
-                                        <li class="second-list-group-item">
-                                            <a href="#">Notifications</a>
-                                        </li>
-                                        <li class="second-list-group-item active">
-                                            <a style="color: black;" href="/Kanbas/Profile/index.html">Profile</a>
-                                        </li>
-                                        <li class="second-list-group-item">
-                                            <a href="#">Settings</a>
-                                        </li>
-                                        <li class="second-list-group-item">
-                                            <a href="#">Files</a>
-                                        </li>
-                                        <li class="second-list-group-item">
-                                            <a href="#">ePortfolios</a>
-                                        </li>
-                                        <li class="second-list-group-item">
-                                            <a href="#">Shared Content</a>
-                                        </li>
-                                        <li class="second-list-group-item">
-                                            <a href="#">The Hub</a>
-                                        </li>
-                                        <li class="second-list-group-item">
-                                            <a href="#">Qwickly Course Tools</a>
-                                        </li>
-                                        <li class="second-list-group-item">
-                                            <a href="#">Global Announcements</a>
-                                        </li>
-                                    </ul>
-                                </td>
-            
                     <td valign="top">
-                        <table>
-                            <tr>
-                                <td>
-                                    <div class="profile">
-                                        <i class="fa fa-user" aria-hidden="true"></i><br/>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <label for="name-input" class="name-input">Name: </label>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <input class="form-control form-control-sm" type="text" value="Bob Bo" aria-label="name"/>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <label>Pronouns: </label>
-                                            <select>
-                                                <option>None</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <label for="title-input" class="title-input">Title: </label>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <input class="form-control form-control-sm" type="text" aria-label="title"/>
-                                        </div>
-                                    </div>
-            
-                                    <br/>
-                                    <h2>Contact</h2>
-                                    <p>No registered services, you can add some on the <a>settings</a> page</p>
-
-                                    <div class="mb-3">
-                                        <label for="textarea" class="form-label"><h2>Biography</h2></label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Faculty, Software Enginerer, AI, Space, and renewables enthusiast</textarea>
-                                    </div>
-                                    
-                                    <h2>Links</h2>
-
-
-
-                                    <div class="container">
-                                        <div class="row">
-                                          <div class="col">
-                                            <h5>Title</h5>
-                                            <div class="row">
-                                                <div class="row">
-                                                    <div class="col-md-10">
-                                                        <input class="form-control form-control-sm" type="text" value="YouTube" aria-label="name"/>
-                                                        <button class="btn btn-light">Add another link</button><br/>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        &#8594;
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                          </div>
-                                          <div class="col">
-                                            <h5>URL</h5>
-                                            <div class="row">
-                                                <div class="row">
-                                                    <div class="col-md-10">
-                                                        <input class="form-control form-control-sm" type="text" value="https://www.youtube.com/" aria-label="name"/>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <a href="#">Remove</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <a href="../Account/index.html"><button class="btn btn-light">Cancel</button></a>
-                                <a href="../Account/index.html"><button class="btn btn-danger">Save Profile</button><br/></a>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td class="page-title d-none d-xxl-table-cell d-xl-table-cell d-lg-table-cell d-md-none" colspan="3">
+                                        <h2>Bob Bo</h2>
+                                    <hr/>
                                 </td>
-                                <div class="float-end">
-                                    <a href="../Account/index.html">
-                                        <button class="btn btn-light"><i class="fa fa-pencil" aria-hidden="true"></i>Cancel Editing</button>
-                                    </a>
-                                </div><br>
+                                <td class="md-dropdown d-md-table-cell d-xl-none d-lg-none" style="width:100%">
+                                    <div class="d-flex justify-content-between">
+                                        
+                                        <a class="btn btn-black d-flex justify-content-between align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 45px; color:white;">
+                                            <i class="fa-solid fa-bars" style="color: #ee3a3a;"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" style="width: 100%;">
+                                            <li><a class="dropdown-item text-end" href="../Profile/edit.html"><i class="fa-solid fa-xmark" style="width: 45px; color:grey;"></i></a></li>
+                                            <li><a class="dropdown-item" href="../../Dashboard/index.html"><i class="fa-solid fa-gauge" style="color: #ee3a3a;"></i>Dashboard</a></li>
+                                            <li><a class="dropdown-item" href="../../Account/index.html"><i class="fa-solid fa-book" style="color: #ee3a3a;"></i>Account</a></li>
+                                            <li><a class="dropdown-item" href="../../Courses/CourseNavigation/index.html"><i class="fa-solid fa-calendar-days" style="color: #ee3a3a;"></i>Courses</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-inbox" style="color: #ee3a3a;"></i>Calendar</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-clock" style="color: #ee3a3a;"></i>Inbox</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-video" style="color: #ee3a3a;"></i>Studio</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket" style="color: #ee3a3a;"></i>Commons</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-question" style="color: #ee3a3a;"></i>Help</a></li>
+                                        </ul>
+                                        <div class="text-center" style="color:white;">
+                                            Profile <br/>
+                                            Bob Bo
+                                        </div>
+                                        <a class="btn btn-black d-flex justify-content-between align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 45px; color:white;">
+                                            <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" style="width: 100%;">
+                                            <li><a class="dropdown-item text-end" href="../Profile/edit.html"><i class="fa-solid fa-xmark" style="width: 45px; color:grey;"></i></a></li>
+                                            <li><a class="dropdown-item" href="../Profile/edit.html"><i class="fa fa-user" aria-hidden="true" style="color: #ee3a3a;"></i>Profile</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear" style="color: #ee3a3a;"></i>Notifications</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear" style="color: #ee3a3a;"></i>Settings</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-folder" style="color: #ee3a3a;"></i>Files</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-folder" style="color: #ee3a3a;"></i>ePortfolios</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear" style="color: #ee3a3a;"></i>Shared Content</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear" style="color: #ee3a3a;"></i>The Hub</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear" style="color: #ee3a3a;"></i>Qwuickly Course Tools</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear" style="color: #ee3a3a;"></i>Global Announcements</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="d-none d-xxl-table-cell d-xl-table-cell d-lg-table-cell d-md-none" valign="top">
+                                        <ul>
+                                            <li class="second-list-group-item">
+                                                <a href="#">Notifications</a>
+                                            </li>
+                                            <li class="second-list-group-item active">
+                                                <a style="color: black;" href="/Kanbas/Profile/index.html">Profile</a>
+                                            </li>
+                                            <li class="second-list-group-item">
+                                                <a href="#">Settings</a>
+                                            </li>
+                                            <li class="second-list-group-item">
+                                                <a href="#">Files</a>
+                                            </li>
+                                            <li class="second-list-group-item">
+                                                <a href="#">ePortfolios</a>
+                                            </li>
+                                            <li class="second-list-group-item">
+                                                <a href="#">Shared Content</a>
+                                            </li>
+                                            <li class="second-list-group-item">
+                                                <a href="#">The Hub</a>
+                                            </li>
+                                            <li class="second-list-group-item">
+                                                <a href="#">Qwickly Course Tools</a>
+                                            </li>
+                                            <li class="second-list-group-item">
+                                                <a href="#">Global Announcements</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+
+                                
+                                    <td valign="top">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <div class="profile">
+                                                        <i class="fa fa-user" aria-hidden="true"></i><br/>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <label for="name-input" class="name-input">Name: </label>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control form-control-sm" type="text" value="Bob Bo" aria-label="name"/>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="dropdown">
+                                                                <label>Pronouns: </label>
+                                                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    None
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item" href="#">None</a>
+                                                                </div>
+                                                              </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <label for="title-input" class="title-input">Title: </label>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control form-control-sm" type="text" aria-label="title"/>
+                                                        </div>
+                                                    </div>
+                                
+                                                    <br/>
+                                                    <h2>Contact</h2>
+                                                    <p>No registered services, you can add some on the <a>settings</a> page</p>
+                                
+                                                    <div class="mb-3">
+                                                        <label for="textarea" class="form-label"><h2>Biography</h2></label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Faculty, Software Enginerer, AI, Space, and renewables enthusiast</textarea>
+                                                    </div>
+                                                    
+                                                    <h2>Links</h2>
+                                
+                                
+                                
+                                                    <div class="container">
+                                                        <div class="row">
+                                                          <div class="col">
+                                                            <h5>Title</h5>
+                                                            <div class="row">
+                                                                <div class="row">
+                                                                    <div class="col-md-10">
+                                                                        <input class="form-control form-control-sm" type="text" value="YouTube" aria-label="name"/>
+                                                                        <button class="btn btn-light">Add another link</button><br/>
+                                                                    </div>
+                                                                    <div class="col-md-1">
+                                                                        &#8594;
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                          </div>
+                                                          <div class="col">
+                                                            <h5>URL</h5>
+                                                            <div class="row">
+                                                                <div class="row">
+                                                                    <div class="col-md-10">
+                                                                        <input class="form-control form-control-sm" type="text" value="https://www.youtube.com/" aria-label="name"/>
+                                                                    </div>
+                                                                    <div class="col-md-1">
+                                                                        <a href="#">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr/>
+                                                <a href="../Profile/index.html"><button class="btn btn-light">Cancel</button></a>
+                                                <a href="../Profile/index.html"><button class="btn btn-danger">Save Profile</button><br/></a>
+                                                </td>
+                                                <div class="float-end px-3">
+                                                    <a href="../Profile/index.html">
+                                                        <button class="btn btn-light"><i class="fa fa-pencil" aria-hidden="true"></i>Cancel Editing</button>
+                                                    </a>
+                                                </div><br>
+                                            </tr>
+                                        </table>
+                                    </td>
                             </tr>
                         </table>
                     </td>
@@ -177,6 +229,3 @@
         </table>
     </body>
 </html>
-
-
-

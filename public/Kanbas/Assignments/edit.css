@@ -108,3 +108,11 @@ a {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.custom-dropdown {
+    width: 100%;
+  }
+
+.custom-dropdown .dropdown-menu {
+width: 100%;
+}

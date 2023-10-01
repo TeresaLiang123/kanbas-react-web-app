@@ -3,15 +3,6 @@
     text-decoration: none;
 }
 
-.list-group .list-group-item a {
-    color: black;
-
-}
-
-.list-group .list-group-item {
-    border-radius: 0;
-}
-
 .wd-side-bar {
     background-color: black;
     width: 83px;
@@ -50,7 +41,7 @@ li {
     list-style-type: none;
 }
 
-li .list-group-item {
+li .list-group-item{
     border-left:2px solid #00a80b;
 }
 
@@ -68,7 +59,6 @@ li .list-group-item {
     color: #00a80b;
     text-align: end;
 }
-
 
 .with-check {
     border-left: 4px solid #00a80b;
@@ -91,20 +81,4 @@ li .list-group-item {
 a {
     text-decoration: none;
     color: red;
-}
-
-.d-flex .fa-solid {
-    padding-left:10px;
-    padding-right:10px;
-}
-
-.percentage{
-    border:1px solid black;
-    border-radius: 20px;
-    padding:3px;
-}
-
-.fa-solid .fa-plus {
-    padding-left: 10px;
-    padding-right: 10px;
 }
