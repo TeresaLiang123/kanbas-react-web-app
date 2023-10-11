@@ -1,0 +1,81 @@
+.wd-side-bar {
+    background-color: black;
+    width: 83px;
+    height:100%;
+    text-align: center;
+}
+
+.list-group-item {
+    color: white;
+    text-decoration: none;
+}
+
+.list-group-item .fa-user {
+    color:grey;
+}
+
+.list-group-item .fa-n {
+    font-size: 50px;
+    padding:10px;
+}
+
+li {
+    padding:9px;
+    list-style-type: none;
+}
+
+.fa-user {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.fa-solid {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.fa-regular {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.isActive {
+    background-color: white;
+    color: #ee3a3a;
+}
+
+.card-padding {
+    padding-left: 0px;
+    padding-right: 35px;
+    margin-bottom: 30px;
+}
+
+.modules-info {
+    width: 100%;
+    padding-left:35px;
+    padding-right:35px;
+}
+
+.card-size {
+    width: 270px;
+}
+
+.page-title {
+    padding-left:20px;
+}
+
+.padding {
+    padding-left:30px;
+}
+
+.item-text {
+    color: red;
+    text-decoration: none;
+    padding:9px;
+}
+
+.courseNavigationActive {
+    color: black;
+    background-color: white;
+    border-left: 2px solid black;
+}
