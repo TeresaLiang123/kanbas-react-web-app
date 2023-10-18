@@ -6,18 +6,16 @@ function CourseNavigation() {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   return (
-    <>
         <div className="list-group px-4" style={{ width: 150 }}>
         {links.map((link, index) => (
             <Link
-            key={index}
-            to={`/Kanbas/Courses/${courseId}/${link}`}
-            className={`second-group-item item-text ${pathname.includes(link) && "courseNavigationActive"}`}>
-            {link}
+                key={index}
+                to={`/Kanbas/Courses/${courseId}/${link}`}
+                className={`second-group-item item-text ${pathname.includes(link) && "courseNavigationActive"}`}>
+                {link}
             </Link>
         ))}
         </div>
-    </>
   );
 }
 

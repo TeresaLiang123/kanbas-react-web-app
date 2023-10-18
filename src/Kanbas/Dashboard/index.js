@@ -8,11 +8,11 @@ function Dashboard() {
   return (
     <>
       <h1 className="px-3">Dashboard</h1>
-      <hr/>
+      <hr width="100%"/>
         <div className="col- d-flex flex-wrap flex-row">
             {courses.map((course) => (
               <div className="px-3 py-3">
-                <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item">
+                <Link key={course._id} to={`/Kanbas/Courses/${course._id}/Home`} className="list-group-item">
                   <div class="card card-size">
                       <img class="card-img-top" src={source}></img>
                       <div class='card-body'>

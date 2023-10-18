@@ -2,8 +2,7 @@ import ModuleList from "./ModuleList"
 
 function Modules() {
     return (
-        <div>
-            <h1>Module</h1>
+        <div width="100%">
             <ModuleList />
         </div>
     )

@@ -1,3 +1,22 @@
+.breadcrumb-link {
+    color: #ee3a3a;
+    text-decoration: none;
+}
+
+.top-buttons {
+    text-align: end;
+}
+
+.margin-bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.status {
+    float:right;
+    width:300px;
+}
+
 .wd-side-bar {
     background-color: black;
     width: 83px;
@@ -7,6 +26,20 @@
 
 .list-group-item {
     color: white;
+    text-decoration: none;
+}
+
+.list-group-item-secondary {
+    color: black;
+}
+
+.list-group-item-description {
+    background-color: white;
+    padding-left: 30px;
+}
+
+.status-text {
+    color:#ee3a3a;
     text-decoration: none;
 }
 
@@ -79,3 +112,19 @@ li {
     background-color: white;
     border-left: 2px solid black;
 }
+
+.second-list-group-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.margin-bottom-status {
+    padding: 7px;
+    margin-top: 5px;
+    border: .3px solid black;
+}
+
+.status-left-padding {
+    padding-left: 50px;
+}
+

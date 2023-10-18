@@ -6,24 +6,26 @@ import Courses from "./Courses";
 
 function Kanbas() {
    return (
-      <>
-      <Nav/>
-      <div className="d-flex">
-         
-         <div>
-            <KanbasNavigation />
-         </div>
-         <div>
-            <Routes>
-               <Route path="/" element={<Navigate to="Dashboard" />} />
-               <Route path="Account" element={<h1>Account</h1>} />
-               <Route path="Dashboard" element={<Dashboard />} />
-               <Route path="Courses/:courseId/*" element={<Courses />} />
-            </Routes>
-
-         </div>
+      <div>
+         <Nav/>
+         <table width="100%" height="100%">
+            <tbody>
+               <tr>
+                  <td valign="top" width="83px">
+                     <KanbasNavigation />
+                  </td>
+                  <td valign="top">
+                  <Routes>
+                     <Route path="/" element={<Navigate to="Dashboard" />} />
+                     <Route path="Account" element={<h1>Account</h1>} />
+                     <Route path="Dashboard" element={<Dashboard />} />
+                     <Route path="Courses/:courseId/*" element={<Courses />} />
+                  </Routes>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
       </div>
-      </>
    );
  }
  export default Kanbas;
