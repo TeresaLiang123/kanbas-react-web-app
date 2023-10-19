@@ -12,16 +12,43 @@
     margin-bottom: 20px;
 }
 
+.md-dropdown {
+    background-color: black;
+    width: 100%;
+}
+
 .status {
     float:right;
     width:300px;
 }
 
+.with-check {
+    border-left: 4px solid #00a80b;
+    padding-left:50px;
+}
+
+.published {
+    color: green;
+}
+.dropdown-black-background {
+    background-color: black;
+    outline: black;
+}
+.percentage{
+    border:1px solid black;
+    border-radius: 20px;
+    padding:3px;
+}
+
+.kanbas-container {
+    height: 100%;
+    padding:0;
+}
+
 .wd-side-bar {
     background-color: black;
-    width: 83px;
-    height:100%;
     text-align: center;
+    width: 83px;
 }
 
 .list-group-item {
