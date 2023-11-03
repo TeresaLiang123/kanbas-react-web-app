@@ -18,7 +18,9 @@ function Assignments() {
                 <input className="form-control w-25" placeholder="Search for Assignments"/>
                 <div className="float-end">
                     <button type="button" className="btn btn-light px-2">Group</button>
-                    <button type="button" className="btn btn-danger px-2">Assignment</button>
+                    <Link style={{ textDecoration: 'none' }} to={`/Kanbas/Courses/${courseId}/Assignments/`} _hover={{ textDecoration: "none" }}>
+                    <button className="btn btn-danger px-2"><FontAwesomeIcon className='max-1' icon={faPlus}></FontAwesomeIcon>Assignment</button>
+                    </Link>
                     <button type="button" className="btn btn-light px-2">
                       <FontAwesomeIcon icon={faEllipsisV}></FontAwesomeIcon>
                     </button>
@@ -35,12 +37,14 @@ function Assignments() {
                         </div>
                         <div>
                           <button className="btn percentage">40% of Total</button>
-                          <button className="btn mx-2"><FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button>
+                          <Link style={{ textDecoration: 'none' }} key={assignment._id} to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`} _hover={{ textDecoration: "none" }}>
+                          <button className="btn mx-2"><FontAwesomeIcon className='max-1' icon={faPlus}></FontAwesomeIcon></button>
+                          </Link>
                           <FontAwesomeIcon icon={faEllipsisV}></FontAwesomeIcon>
                           <FontAwesomeIcon icon={faEllipsisV}></FontAwesomeIcon>
                         </div>
                       </li>
-                      <Link style={{ textDecoration: 'none' }} key={assignment._id} to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`} _hover={{ textDecoration: "none" }}>
+                      {/* <Link style={{ textDecoration: 'none' }} key={assignment._id} to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`} _hover={{ textDecoration: "none" }}> */}
                         {assignment.assignments.map((assignmentName) => (
                           <li key={assignment._id} className="list-group-item list-group-item-secondary list-group-item-description justify-content-between d-flex align-items-center with-check">
                             <div>
@@ -51,7 +55,7 @@ function Assignments() {
                             <FontAwesomeIcon color="green" icon={faCircleCheck}></FontAwesomeIcon>
                           </li>
                         ))}
-                      </Link>
+                      {/* </Link> */}
                   </li>
               ))}
           </ul>

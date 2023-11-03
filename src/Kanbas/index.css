@@ -1,3 +1,24 @@
+.add-button {
+    margin-right: 10px;
+}
+
+.create-module {
+    width: 560px;
+}
+
+.module-name {
+    width: 350px;
+}
+
+.edit-input {
+    margin-right: 20px;
+}
+
+.module-text-area {
+    width: 350px;
+    margin-top: 10px;
+}
+
 .breadcrumb-link {
     color: #ee3a3a;
     text-decoration: none;

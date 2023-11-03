@@ -6,7 +6,7 @@ function Home() {
     return (
         <>
             <ModuleList/>
-            <td className="status-left-padding d-none d-xxl-table-cell d-xl-table-cell d-lg-none px-4" width="100%">
+            <td className="status-left-padding d-none d-xxl-table-cell d-xl-table-cell d-lg-none px-4" valign="top" width="100%">
                 <div className="status">
                     <h2>Course Status</h2>
                     <hr/>

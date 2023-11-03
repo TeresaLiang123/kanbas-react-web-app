@@ -19,9 +19,9 @@ import { faXmark, faGauge, faBook, faCalendarDays, faInbox, faClock, faVideo, fa
 } from "@fortawesome/free-solid-svg-icons";
 import { Dropdown } from "react-bootstrap";
 import Grades from "../Grades";
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const dropDownItems = [{faGauge},{faBook},{faCalendarDays},{faInbox},{faClock},{faVideo},{faArrowRightFromBracket},{faCircleQuestion}]
   const dropDownItemNames = ["Dashboard", "Account", "Courses", "Calendar", "Inbox", "Studio", "Commons", "Help"]
   const courseDropdownIcons = [{faHouse},{faGroupArrowsRotate},{faPlug},{faPenToSquare},{faRocket},{faBookBookmark},{faUsers},{faPlug},{faMessage},{faBullhorn},{faFile},
@@ -34,7 +34,7 @@ function Courses() {
   return (
     <>
           <tr>
-            <td className="page-title d-none d-xxl-table-cell d-xl-table-cell d-lg-table-cell d-md-none" colspan="3" width="100%">
+            <td className="page-title d-none d-xxl-table-cell d-xl-table-cell d-lg-table-cell d-md-none" colspan="3" valign="top" width="100%">
               <Breadcrumb separator={<ChevronRightIcon></ChevronRightIcon>}>
                 <BreadcrumbLink>
                   <FontAwesomeIcon icon={faBars} color="#ee3a3a"> </FontAwesomeIcon>
