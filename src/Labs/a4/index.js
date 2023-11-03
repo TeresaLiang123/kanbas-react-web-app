@@ -10,9 +10,10 @@ import PassingFunctions from "./PassingFunctions";
 import StringStateVariables from "./StringStateVariables";
 import AreaStateVariable from "./AreaStateVariable"
 import ChildStateComponent from "./ChildStateVariable";
-function Assignment4() {
+import React from "react";
+const Assignment4 = () => {
     function sayHello() {
-        alert("Hello");
+        alert("Hello"); 
       }
     
   return (
