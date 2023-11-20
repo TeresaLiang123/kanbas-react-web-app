@@ -19,9 +19,32 @@ import { faXmark, faGauge, faBook, faCalendarDays, faInbox, faClock, faVideo, fa
 } from "@fortawesome/free-solid-svg-icons";
 import { Dropdown } from "react-bootstrap";
 import Grades from "../Grades";
-function Courses({ courses }) {
+import { useState, useEffect } from "react";
+import axios from "axios";
+import * as service from "../service"
+function Courses() {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  // const URL = "http://localhost:4000/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
+  const [course, setCourse] = useState({});
+  // const fetchCourseById = async (courseId) => {
+  //   const response = await service.fetchCourseById(
+  //     courseId
+  //   );
+  //   setCourse(response);
+  // };
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   const dropDownItems = [{faGauge},{faBook},{faCalendarDays},{faInbox},{faClock},{faVideo},{faArrowRightFromBracket},{faCircleQuestion}]
   const dropDownItemNames = ["Dashboard", "Account", "Courses", "Calendar", "Inbox", "Studio", "Commons", "Help"]
   const courseDropdownIcons = [{faHouse},{faGroupArrowsRotate},{faPlug},{faPenToSquare},{faRocket},{faBookBookmark},{faUsers},{faPlug},{faMessage},{faBullhorn},{faFile},
