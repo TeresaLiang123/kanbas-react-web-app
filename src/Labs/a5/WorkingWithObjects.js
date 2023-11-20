@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 function WorkingWithObjects() {
-    const URL = "http://localhost:4000/a5/assignment"
+    // const URL = "http://localhost:4000/a5/assignment"
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const URL =`${API_BASE}/a5/assignment`;
     const [assignment, setAssignment] = useState({
         id: 1,
         title: "NodeJS Assignment",

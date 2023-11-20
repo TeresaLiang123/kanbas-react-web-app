@@ -6,22 +6,23 @@ function EncodingParametersInURLs() {
   const [b, setB] = useState(23);
   const [welcomeMessage, setWelcomeMessage] = useState("Message before server"); 
   const [result, setResult] = useState(0);
-
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const API =`${API_BASE}`;
   const fetchSum = async (a, b) => {
     const response = await
-      axios.get(`http://localhost:4000/a5/add/${a}/${b}`);
+      axios.get(`${API}/a5/add/${a}/${b}`);
     setResult(response.data);
   };
 
   const fetchSubtraction = async (a, b) => {
     const response = await axios.get(
-      `http://localhost:4000/a5/subtract/${a}/${b}`);
+      `${API}/a5/subtract/${a}/${b}`);
     setResult(response.data);
   };
 
   const fetchWelcomeMessage = async () => {
   try {
-    const response = await axios.get("http://localhost:4000/welcome")
+    const response = await axios.get(`${API}/welcome`)
     setWelcomeMessage(response)
   } catch (error) {
     console.log(error)
@@ -63,23 +64,23 @@ function EncodingParametersInURLs() {
 
     <h3>Query Parameters</h3>
       <a
-        href={`http://localhost:4000/a5/calculator?a=${a}&b=${b}&operation=add`}
+        href={`${API}/a5/calculator?a=${a}&b=${b}&operation=add`}
         className="btn btn-primary">
         Add {a} + {b}
       </a>
       <a
-        href={`http://localhost:4000/a5/calculator?a=${a}&b=${b}&operation=subtract`}
+        href={`${API}/a5/calculator?a=${a}&b=${b}&operation=subtract`}
         className="btn btn-danger">
         Substract {a} - {b}
       </a>
       <h3>Path Parameters</h3>
       <a
-        href={`http://localhost:4000/a5/add/${a}/${b}`}
+        href={`${API}/a5/add/${a}/${b}`}
         className="btn btn-primary">
         Add {a} + {b}
       </a>
       <a
-        href={`http://localhost:4000/a5/subtract/${a}/${b}`}
+        href={`${API}/a5/subtract/${a}/${b}`}
         className="btn btn-danger">
         Substract {a} - {b}
       </a>
