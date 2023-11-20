@@ -29,7 +29,7 @@ function WorkingWithArrays() {
     };
 
     const createTodo = async () => {
-      const response = await axios.get("http://localhost:4000/a5/todos/create");
+      const response = await axios.get(`${API}/create`);
       // const response = await axios.post("http://localhost:4000/a5/todos", todo);
       // setTodos([...todos, response.data])
       setTodos(response.data)
@@ -38,7 +38,7 @@ function WorkingWithArrays() {
     const deleteTodo = async (id) => {
       try {
         // const response = await axios.get(`http://localhost:4000/a5/todos/${id}/delete`);
-        const response = await axios.delete(`http://localhost:4000/a5/todos/${id}`);
+        const response = await axios.delete(`${API}/${id}`);
         setTodos(response.data)
         setDisplayError(false)
       } catch(error) {

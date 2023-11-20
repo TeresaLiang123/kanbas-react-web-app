@@ -6,8 +6,8 @@ function EncodingParametersInURLs() {
   const [b, setB] = useState(23);
   const [welcomeMessage, setWelcomeMessage] = useState("Message before server"); 
   const [result, setResult] = useState(0);
-  const API_BASE = "https://kanbas-node-server-app-kpi2.onrender.com";
-  const API =`${API_BASE}`;
+  const API = "https://kanbas-node-server-app-kpi2.onrender.com";
+  // const API =`${API_BASE}`;
   const fetchSum = async (a, b) => {
     const response = await
       axios.get(`${API}/a5/add/${a}/${b}`);
