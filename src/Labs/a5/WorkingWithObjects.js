@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 function WorkingWithObjects() {
     // const URL = "http://localhost:4000/a5/assignment"
-    const API_BASE = process.env.REACT_APP_API_BASE;
+    const API_BASE = "https://kanbas-node-server-app-kpi2.onrender.com";
     const URL =`${API_BASE}/a5/assignment`;
     const [assignment, setAssignment] = useState({
         id: 1,
